@@ -1,0 +1,308 @@
+@font-face {@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">');
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/rajdhani/Rajdhani-Medium.ttf);
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8f184;
+    --blue-color: #19587d;
+    --white-color: #fff;
+    --gradient-white: #eddebf67;
+    --gradient-red: #89000978;
+    --black-color: #000;
+    --gris-color: #c4c4c4;
+    --red-color: #B11313;
+    --black-color1: #000;
+    --black-color2: #0D0E09;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'rajdani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'rajdani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'space Grotesk';
+    font-weight: 300;
+}
+
+
+/*design de la navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
+
+/*design de la partie en tete hero*/
+
+#hero {
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 900px;
+    background-position: top center;
+    background-color: #19587d;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#hero .fleche {
+    display: block;
+    margin: 0 auto;
+    margin-top: 600px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230;
+}
+
+.scroll .social {
+    margin-top: 15px;
+}
+
+
+/*design de la section batman personnage*/
+
+#batman-cinema {
+    margin-top: 40px;
+}
+
+.batman-personnage {
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinema .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 75%;
+    font-size: 21px;
+}
+
+#batman-cinema .personnage-info {
+    text-align: center;
+}
+
+#NÉMÉSIS {
+    margin-top: 40px;
+}
+
+#NÉMÉSIS .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#NÉMÉSIS .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 75%;
+    font-size: 21px;
+}
+
+#NÉMÉSIS .personnage-info {
+    text-align: center;
+}
+
+#ALLIES {
+    margin-top: 40px;
+}
+
+#ALLIES .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#ALLIES .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 75%;
+    font-size: 21px;
+}
+
+#ALLIES .personnage-info {
+    text-align: center;
+}
+
+#JUSTICE-LEAGUE {
+    margin-top: 40px;
+}
+
+#JUSTICE-LEAGUE .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#JUSTICE-LEAGUE .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 75%;
+    font-size: 21px;
+}
+
+
+/* design de la partiemultimedia*/
+
+#MULTIMEDIA .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#multimedia button {
+    position: relative;
+    top: 200px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right {
+    right: -90%;
+}
+
+#multimedia .slider-multimédia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background-color: rgb(49, 45, 45);
+    border-top-right-radius: 20PX;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p {
+    font-size: 13px;
+}
+
+#multimedia .yellow {
+    color: var(--yellow-color);
+}
+
+
+/*design de la partieformulaire*/
+
+#contact {
+    background-color: var(--black-color2);
+    padding: 100px 0;
+}
+
+#contact .form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre {
+    display: block;
+    margin: 25px 0;
+}
+
+#contact .form input[type='email'],
+textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid var(--gris-color);
+    background-color: var(--black-color2);
+    padding: 10px 0;
+}
+
+#contact .new {
+    margin-top: 15px;
+    border-bottom: 2 solid rgb;
+}
+
+#contact .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
